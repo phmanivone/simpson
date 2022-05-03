@@ -21,19 +21,25 @@ header{
     text-align: center;
     background-color: rgb(32, 131, 212);
 }
+img {
+    vertical-align: top;
+}
 main{
     display: flex;
-    margin-top: 10px;
+    padding: 3em 1em;
 }
 nav{
     display: flex;
     width: 20%;
-    margin: 10px;
-    padding: 5px;
+    padding: 20px;
     background-color: rgb(32, 131, 212);
     text-align: center;
     height: fit-content;
     flex-direction: column;
+    justify-content: space-between;
+}
+a{
+    padding-bottom: 10px;
 }
 main article h2 {
     color: goldenrod;
@@ -41,13 +47,13 @@ main article h2 {
 }
 article{
     width: 60%;
-    margin: 10px;
+    padding: 10px;
     text-align: justify;
 }
 aside{
     width: 25%;
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     text-align: justify;
     height: fit-content;
     background-color: rgb(32, 131, 212);
@@ -56,8 +62,24 @@ h3 {
     text-align: center;
     padding: 5px;
 }
+aside img{
+    border: 1px solid white;
+}
 footer{
     padding: 5px;
     text-align: center;
     background-color: rgb(0, 58, 105);
+}
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    /* Styles pour cette Media Queries */
+    #wrapper {
+        max-width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    nav,article,aside{    
+        width: 100%;
+        margin: 0 auto;
+    }
 }
