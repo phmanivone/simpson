@@ -70,7 +70,7 @@ footer{
     text-align: center;
     background-color: rgb(0, 58, 105);
 }
-@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1080px) {
     /* Styles pour cette Media Queries */
     #wrapper {
         max-width: 100%;
